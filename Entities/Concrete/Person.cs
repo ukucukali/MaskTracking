@@ -1,12 +1,14 @@
+using Entities.Abstract;
+
 namespace Entities.Concrete;
 
-public class Person
+public class Person : IEntity
 {
     public string FirstName { get; set; }
     
     public string LastName { get; set; }
         
-    public string NationalityNumber { get; set; }
+    public long NationalityNumber { get; set; }
     
-    public DateTime DateOfBirth { get; set; }
+    public short BirthYear { get; set; }
 } 
